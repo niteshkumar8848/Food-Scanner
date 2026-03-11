@@ -44,7 +44,8 @@ AI-powered food scanner application built with Flutter that analyzes food images
 
 | Home Screen | Scan Screen | Result Screen | History Screen |
 |-------------|-------------|---------------|----------------|
-| ![Home](https://via.placeholder.com/300x600/10B981/FFFFFF?text=Home+Screen) | ![Scan](https://via.placeholder.com/300x600/14B8A6/FFFFFF?text=Scan+Screen) | ![Result](https://via.placeholder.com/300x600/06B6D4/FFFFFF?text=Result+Screen) | ![History](https://via.placeholder.com/300x600/0EA5E9/FFFFFF?text=History+Screen) |
+| ![Home](assets/Screenshots/HomeScreen.jpeg) | ![Scan](assets/Screenshots/ScanScreen.jpeg) | ![Result](assets/Screenshots/ScanResult01.jpeg) | ![History](assets/Screenshots/HistoryScreen.jpeg) |
+
 
 ## Supported Food Categories
 
