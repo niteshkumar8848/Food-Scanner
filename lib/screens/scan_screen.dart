@@ -96,27 +96,7 @@ class _ScanScreenBody extends StatelessWidget {
               icon: const Icon(Icons.photo_library_outlined, color: Colors.white),
             ),
           ),
-          // Debug test images button
-          Container(
-            margin: const EdgeInsets.only(right: 16),
-            decoration: BoxDecoration(
-              color: Colors.black.withValues(alpha: 0.3),
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: IconButton(
-              tooltip: 'Debug test images',
-              onPressed: vm.isLoading
-                  ? null
-                  : () async {
-                      final selected = await _pickDebugAsset(context, vm);
-                      if (!context.mounted || selected == null) return;
-                      final result = await vm.scanFromDebugAsset(selected);
-                      if (!context.mounted || result == null) return;
-                      Navigator.pushNamed(context, AppRoutes.result, arguments: result);
-                    },
-              icon: const Icon(Icons.bug_report_outlined, color: Colors.white),
-            ),
-          ),
+          const SizedBox(width: 8),
         ],
       ),
       body: Stack(
@@ -276,90 +256,6 @@ class _ScanScreenBody extends StatelessWidget {
                 ),
               ),
             ),
-    );
-  }
-
-  Future<String?> _pickDebugAsset(BuildContext context, ScanViewModel vm) async {
-    final files = await vm.getDebugAssets();
-    if (!context.mounted) return null;
-
-    if (files.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('No test images found in assets/test_foods/')),
-      );
-      return null;
-    }
-
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    
-    return showModalBottomSheet<String>(
-      context: context,
-      backgroundColor: isDark ? const Color(0xFF1E293B) : Colors.white,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-      ),
-      builder: (context) {
-        return Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Container(
-              margin: const EdgeInsets.only(top: 12),
-              width: 40,
-              height: 4,
-              decoration: BoxDecoration(
-                color: Colors.grey.shade400,
-                borderRadius: BorderRadius.circular(2),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: Text(
-                'Select Test Image',
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ),
-            Flexible(
-              child: ListView.builder(
-                shrinkWrap: true,
-                padding: const EdgeInsets.only(bottom: 20),
-                itemCount: files.length,
-                itemBuilder: (context, index) {
-                  final path = files[index];
-                  return ListTile(
-                    leading: Container(
-                      padding: const EdgeInsets.all(8),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFF10B981).withValues(alpha: 0.1),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: const Icon(
-                        Icons.image_outlined,
-                        color: Color(0xFF10B981),
-                      ),
-                    ),
-                    title: Text(
-                      path.split('/').last,
-                      style: const TextStyle(fontWeight: FontWeight.w600),
-                    ),
-                    subtitle: Text(
-                      path,
-                      style: TextStyle(
-                        fontSize: 11,
-                        color: Colors.grey.shade500,
-                      ),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    onTap: () => Navigator.pop(context, path),
-                  );
-                },
-              ),
-            ),
-          ],
-        );
-      },
     );
   }
 
