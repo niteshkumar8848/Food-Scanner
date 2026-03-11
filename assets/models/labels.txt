@@ -1,0 +1,126 @@
+apple
+apricot
+avocado
+banana
+Beef noodle soup
+beet
+bell pepper
+black olive
+blackberry
+blueberry
+boil egg
+boiled chicken
+bread
+bread pudding
+broccoli
+brownie
+brussels sprouts
+cabbage
+Carrot
+carrot cake
+cauliflower
+cheese plate
+cheesecake
+cherry
+chestnut
+chicken breast
+chicken burger
+chicken curry
+chicken shish kebab
+chicken wings
+chickpea dish
+chilli pepper
+chocolate cake
+chupra
+club sandwich
+coconut
+corn
+croissant
+cucumber
+cup cakes
+dates
+donuts
+dumplings
+eggplant
+eggs with sausage
+falafel
+fig
+fish and chips
+french fries
+french toast
+fried chicken
+fried rice
+frozen yogurt
+garlic
+garlic bread
+ginger
+Golden Chicken
+grape
+grapefruit
+green olive
+green runner beans
+grilled cheese sandwich
+hamburger
+hot and sour soup
+hot dog
+hummus
+ice cream
+jalapeno
+kidney bean dish
+kiwi
+lamb chops
+lemon
+lentil balls
+lentil dish
+lentil soup
+lettuce
+mango
+mashed potatoes
+meatball
+melon
+muffin
+mushroom
+okra stew
+omelette
+onion
+onion rings
+orange
+pancakes
+peach
+peanut
+pear
+peas
+pepper
+pickle
+pineapple
+pizza
+plum
+pomegranate
+porridge
+potato dish
+pumpkin
+radish
+raspberry
+red velvet cake
+rice
+roast chicken
+samosa
+sandwich
+sausage
+sauteed meat
+sautéed chicken
+Smoothie Bowl
+spinach
+spring rolls
+steak
+strawberry
+stuffed peppers
+sunny side up eggs
+sweet potato
+tangerine
+tea
+toast
+tomato
+tomato soup
+watermelon
+yogurt

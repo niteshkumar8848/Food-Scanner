@@ -1,0 +1,124 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+*.lock
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+*.idea_modules/
+
+# VSCode
+.vscode/
+!.vscode/code.code-snippets
+!.vscode/extensions.json
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.flutter-plugins
+.pub-cache/
+.pub/
+/build/
+/coverage/
+.packages
+.flutter-plugins-dependencies.json
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/.gradle/
+/android/build/
+/android/captures/
+/android/app/build
+
+# iOS/Xcode related
+**/ios/*.xcuserstate
+**/ios/.symlinks
+**/ios/Pods/
+**/ios/Podfile.lock
+**/ios/.generated/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+*.dSYM.zip
+*.dSYM
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Runner.xcworkspace/xcuserdata
+
+# macOS related
+**/macos/Flutter/ephemeral/.plugin_symlinks
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+*.hmap
+*.app
+*.dSYM
+*.dSYM.zip
+*.app.dSYM.zip
+
+# Linux related
+**/linux/.cmake/
+**/linux/flutter/ephemeral/
+**/linux/runner/CMakeLists.txt.user
+
+# Windows related
+**/windows/.cmake/
+**/windows/ephemeral/
+**/windows/runner/CMakeLists.txt.user
+*.exe
+*.exe.stacktrace
+
+# Web related
+**/web/build/
+**/web/.dart_tool/
+**/web/.packages/
+
+# Test related
+/test_html/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Local configuration (contains API keys, paths, etc.)
+local.properties
+*.local.yaml
+
+# Build related (intentional for caching builds)
+/build/
+/.flutter/
+
