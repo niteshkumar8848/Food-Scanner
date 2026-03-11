@@ -62,10 +62,6 @@ class FoodRepositoryImpl implements FoodRepository {
     final second = predictions.length > 1 ? predictions[1].confidence : 0.0;
     final margin = top.confidence - second;
 
-    if (top.confidence < 0.22) {
-      throw StateError('Image unclear. Please retake photo.');
-    }
-
     final profile = await _nutritionService.fetchProfile(top.label);
     final scoreDetails = HealthScoreCalculator.evaluate(profile.nutrition);
 
@@ -107,7 +103,7 @@ class FoodRepositoryImpl implements FoodRepository {
     required double confidence,
     required double margin,
   }) {
-    if (confidence < 0.70 || margin < 0.12) {
+    if (confidence < 0.40 || margin < 0.08) {
       return 'Model confidence is moderate. Verify visually. $scoreRecommendation';
     }
     return scoreRecommendation;
@@ -119,7 +115,7 @@ class FoodRepositoryImpl implements FoodRepository {
     required double margin,
   }) {
     final warnings = [...baseWarnings];
-    if (confidence < 0.70 || margin < 0.12) {
+    if (confidence < 0.40 || margin < 0.08) {
       warnings.add(
         'AI confidence is moderate (${(confidence * 100).toStringAsFixed(1)}%). '
         'Retake scan in better light for more reliable detection.',
