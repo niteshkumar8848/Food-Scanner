@@ -12,7 +12,7 @@ AI-powered food scanner application built with Flutter that analyzes food images
 
 ### 🤖 AI-Powered Detection
 - Real-time food image classification using TensorFlow Lite
-- Supports **101 food categories** including fruits, vegetables, meats, desserts, and beverages
+- Supports **82 food categories** including fruits, vegetables, meats, desserts, and beverages
 - Confidence-based prediction with top 3 suggestions
 - Offline inference - works without internet connection
 
@@ -44,12 +44,12 @@ AI-powered food scanner application built with Flutter that analyzes food images
 
 | Home Screen | Scan Screen | Result Screen | History Screen |
 |-------------|-------------|---------------|----------------|
-| ![Home](assets/Screenshots/HomeScreen.jpeg) | ![Scan](assets/Screenshots/ScanScreen.jpeg) | ![Result](assets/Screenshots/ScanResult01.jpeg) | ![History](assets/Screenshots/HistoryScreen.jpeg) |
+| ![Home](assets/Screenshots/HomeScreen.jpeg) | ![Scan](assets/Screenshots/ScanScreen.jpeg) | ![Result](assets/Screenshots/ScanResult01.jpeg) | ![History](assets/Screenshots/ScanHistory.jpeg ) |
 
 
 ## Supported Food Categories
 
-The model can recognize **101 food items** including:
+The model can recognize **82 food items** including:
 
 | Category | Examples |
 |----------|----------|

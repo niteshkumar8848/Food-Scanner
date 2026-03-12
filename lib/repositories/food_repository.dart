@@ -55,9 +55,10 @@ class FoodRepositoryImpl implements FoodRepository {
     Future<List<PredictionResult>> Function() classifier,
   ) async {
     final predictions = await classifier().timeout(
-      const Duration(seconds: 8),
+      const Duration(seconds: 20),
       onTimeout: () => throw StateError('AI detection timed out. Please try again.'),
     );
+    _logTopPredictions(predictions);
     final top = _aiService.getTopPrediction(predictions);
     final second = predictions.length > 1 ? predictions[1].confidence : 0.0;
     final margin = top.confidence - second;
@@ -129,6 +130,22 @@ class FoodRepositoryImpl implements FoodRepository {
     return message.contains('image unclear') ||
         message.contains('blurry') ||
         message.contains('retake photo');
+  }
+
+  void _logTopPredictions(List<PredictionResult> predictions) {
+    if (predictions.isEmpty) return;
+
+    final summary = predictions
+        .take(3)
+        .toList()
+        .asMap()
+        .entries
+        .map(
+          (entry) =>
+              '#${entry.key + 1} ${entry.value.label} ${(entry.value.confidence * 100).toStringAsFixed(2)}%',
+        )
+        .join(' | ');
+    debugPrint('Model top predictions: $summary');
   }
 }
 

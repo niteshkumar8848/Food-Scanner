@@ -46,7 +46,7 @@ Object _preprocessOnIsolate(_PreprocessInput input) {
   }
 
   return input.config.isQuantized
-      ? _buildUint8Tensor(resized, input.config)
+      ? _buildQuantizedTensor(resized, input.config)
       : _buildFloatTensor(resized, input.config);
 }
 
@@ -66,20 +66,35 @@ Object _buildFloatTensor(img.Image image, ModelConfig config) {
   return [tensor];
 }
 
-Object _buildUint8Tensor(img.Image image, ModelConfig config) {
+Object _buildQuantizedTensor(img.Image image, ModelConfig config) {
   final tensor = List.generate(
     config.inputHeight,
     (y) => List.generate(config.inputWidth, (x) {
       final p = image.getPixel(x, y);
       final rgb = _channelOrder(p.r.toDouble(), p.g.toDouble(), p.b.toDouble(), config.channelOrder);
+      final r = _quantizeInput(rgb.$1, config);
+      final g = _quantizeInput(rgb.$2, config);
+      final b = _quantizeInput(rgb.$3, config);
       return [
-        rgb.$1.round().clamp(0, 255),
-        rgb.$2.round().clamp(0, 255),
-        rgb.$3.round().clamp(0, 255),
+        r,
+        g,
+        b,
       ];
     }),
   );
   return [tensor];
+}
+
+int _quantizeInput(double pixel, ModelConfig config) {
+  final normalized = (pixel - config.normalizeMean) / config.normalizeStd;
+  final raw = config.inputScale > 0
+      ? (normalized / config.inputScale) + config.inputZeroPoint
+      : normalized;
+
+  if (config.isSignedInt8) {
+    return raw.round().clamp(-128, 127);
+  }
+  return raw.round().clamp(0, 255);
 }
 
 (double, double, double) _channelOrder(double r, double g, double b, ChannelOrder order) {

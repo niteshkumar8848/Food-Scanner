@@ -1,7 +1,6 @@
 import 'package:hive/hive.dart';
 
 import '../models/food_scan_result.dart';
-import '../utils/example_data.dart';
 
 class StorageService {
   static const _historyBoxName = 'scan_history_box';
@@ -10,11 +9,6 @@ class StorageService {
 
   Future<void> initialize() async {
     _historyBox = await Hive.openBox(_historyBoxName);
-    if (_historyBox.isEmpty) {
-      for (final item in ExampleData.historySeed) {
-        await _historyBox.add(item.toMap());
-      }
-    }
   }
 
   List<FoodScanResult> getHistory() {

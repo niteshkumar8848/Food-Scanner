@@ -1,8 +1,75 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-11T05:38:46.143556Z",
+  "generatedAt": "2026-03-12T15:25:26.963576Z",
   "source": "assets/models/labels.txt",
   "foods": [
+    {
+      "label": "Carrot",
+      "healthScore": 8,
+      "nutrition": {
+        "calories": 26.0,
+        "sugar": 2.0,
+        "fat": 0.5,
+        "saturatedFat": 0.03,
+        "protein": 3.0,
+        "fiber": 6.0,
+        "sodium": 0.04
+      },
+      "avoidFor": [
+        "Documented allergy to this vegetable"
+      ]
+    },
+    {
+      "label": "Chicken",
+      "healthScore": 2,
+      "nutrition": {
+        "calories": 165.0,
+        "sugar": 1.0,
+        "fat": 10.0,
+        "saturatedFat": 3.0,
+        "protein": 19.0,
+        "fiber": 1.5,
+        "sodium": 0.18
+      },
+      "avoidFor": [
+        "Chronic kidney disease requiring protein restriction",
+        "Hyperuricemia or gout"
+      ]
+    },
+    {
+      "label": "Smoothie_Bowl",
+      "healthScore": 3,
+      "nutrition": {
+        "calories": 173.0,
+        "sugar": 8.0,
+        "fat": 8.0,
+        "saturatedFat": 3.0,
+        "protein": 8.0,
+        "fiber": 5.0,
+        "sodium": 0.23
+      },
+      "avoidFor": [
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
+      ]
+    },
+    {
+      "label": "almond",
+      "healthScore": 3,
+      "nutrition": {
+        "calories": 205.0,
+        "sugar": 8.0,
+        "fat": 8.0,
+        "saturatedFat": 1.5,
+        "protein": 8.0,
+        "fiber": 5.0,
+        "sodium": 0.30000000000000004
+      },
+      "avoidFor": [
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
+      ]
+    },
     {
       "label": "apple",
       "healthScore": 9,
@@ -16,25 +83,8 @@
         "sodium": 0.007
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
-      ]
-    },
-    {
-      "label": "apricot",
-      "healthScore": 8,
-      "nutrition": {
-        "calories": 64.0,
-        "sugar": 12.0,
-        "fat": 0.4,
-        "saturatedFat": 0.1,
-        "protein": 2.5,
-        "fiber": 4.0,
-        "sodium": 0.006
-      },
-      "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -50,8 +100,8 @@
         "sodium": 0.28
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -67,74 +117,58 @@
         "sodium": 0.005
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
-      "label": "Beef noodle soup",
-      "healthScore": 4,
-      "nutrition": {
-        "calories": 162.0,
-        "sugar": 1.5,
-        "fat": 7.0,
-        "saturatedFat": 4.0,
-        "protein": 16.0,
-        "fiber": 1.5,
-        "sodium": 0.3
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "beet",
-      "healthScore": 10,
-      "nutrition": {
-        "calories": 41.0,
-        "sugar": 4.0,
-        "fat": 0.2,
-        "saturatedFat": 0.09666666666666666,
-        "protein": 2.5,
-        "fiber": 3.0,
-        "sodium": 0.01
-      },
-      "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "bell pepper",
+      "label": "bell_pepper",
       "healthScore": 9,
       "nutrition": {
-        "calories": 49.0,
+        "calories": 37.0,
         "sugar": 3.0,
-        "fat": 0.5,
+        "fat": 0.4,
         "saturatedFat": 0.06333333333333332,
-        "protein": 2.0,
-        "fiber": 6.0,
-        "sodium": 0.04
+        "protein": 3.5,
+        "fiber": 5.0,
+        "sodium": 0.03
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
-      "label": "black olive",
+      "label": "bhendi_sabji",
       "healthScore": 2,
       "nutrition": {
-        "calories": 174.0,
+        "calories": 164.0,
         "sugar": 7.0,
-        "fat": 9.0,
+        "fat": 7.0,
         "saturatedFat": 3.5,
-        "protein": 9.0,
-        "fiber": 2.0,
+        "protein": 7.0,
+        "fiber": 4.0,
         "sodium": 0.29000000000000004
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
+      ]
+    },
+    {
+      "label": "black_olive",
+      "healthScore": -1,
+      "nutrition": {
+        "calories": 157.0,
+        "sugar": 4.0,
+        "fat": 8.0,
+        "saturatedFat": 2.5,
+        "protein": 8.0,
+        "fiber": 5.0,
+        "sodium": 0.42000000000000004
+      },
+      "avoidFor": [
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -150,8 +184,8 @@
         "sodium": 0.006
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -167,42 +201,42 @@
         "sodium": 0.005
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
-      "label": "boil egg",
-      "healthScore": 3,
+      "label": "boil_egg",
+      "healthScore": 6,
       "nutrition": {
-        "calories": 201.0,
-        "sugar": 1.0,
-        "fat": 11.0,
-        "saturatedFat": 3.0,
-        "protein": 15.0,
-        "fiber": 1.5,
-        "sodium": 0.29
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "boiled chicken",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 190.0,
+        "calories": 194.0,
         "sugar": 0.5,
-        "fat": 7.0,
+        "fat": 11.0,
         "saturatedFat": 2.0,
-        "protein": 14.0,
-        "fiber": 0.5,
-        "sodium": 0.22999999999999998
+        "protein": 18.0,
+        "fiber": 1.5,
+        "sodium": 0.42
       },
       "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
+        "Chronic kidney disease requiring protein restriction",
+        "Hyperuricemia or gout"
+      ]
+    },
+    {
+      "label": "boiled_chicken",
+      "healthScore": 5,
+      "nutrition": {
+        "calories": 183.0,
+        "sugar": 2.0,
+        "fat": 7.0,
+        "saturatedFat": 5.0,
+        "protein": 17.0,
+        "fiber": 0.5,
+        "sodium": 0.36
+      },
+      "avoidFor": [
+        "Chronic kidney disease requiring protein restriction",
+        "Hyperuricemia or gout"
       ]
     },
     {
@@ -218,26 +252,25 @@
         "sodium": 0.30000000000000004
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
-      "label": "bread pudding",
-      "healthScore": -5,
+      "label": "brinjal",
+      "healthScore": -2,
       "nutrition": {
-        "calories": 329.0,
-        "sugar": 25.0,
-        "fat": 20.0,
-        "saturatedFat": 9.0,
-        "protein": 6.0,
-        "fiber": 2.0,
-        "sodium": 0.55
+        "calories": 148.0,
+        "sugar": 3.0,
+        "fat": 7.0,
+        "saturatedFat": 3.0,
+        "protein": 7.0,
+        "fiber": 4.0,
+        "sodium": 0.33
       },
       "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -253,42 +286,25 @@
         "sodium": 0.02
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
-      "label": "brownie",
-      "healthScore": -5,
+      "label": "burger",
+      "healthScore": -3,
       "nutrition": {
-        "calories": 358.0,
-        "sugar": 30.0,
-        "fat": 17.0,
-        "saturatedFat": 9.0,
-        "protein": 6.0,
-        "fiber": 1.0,
-        "sodium": 0.34
+        "calories": 287.0,
+        "sugar": 10.0,
+        "fat": 21.0,
+        "saturatedFat": 8.0,
+        "protein": 17.0,
+        "fiber": 4.0,
+        "sodium": 0.8200000000000001
       },
       "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
-      ]
-    },
-    {
-      "label": "brussels sprouts",
-      "healthScore": 3,
-      "nutrition": {
-        "calories": 165.0,
-        "sugar": 8.0,
-        "fat": 8.0,
-        "saturatedFat": 1.5,
-        "protein": 8.0,
-        "fiber": 5.0,
-        "sodium": 0.35
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Hypertension",
+        "Hypercholesterolemia or dyslipidemia",
+        "Sodium-restricted diets"
       ]
     },
     {
@@ -304,41 +320,25 @@
         "sodium": 0.02
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
-      "label": "Carrot",
-      "healthScore": 8,
+      "label": "cake",
+      "healthScore": -5,
       "nutrition": {
-        "calories": 26.0,
-        "sugar": 2.0,
-        "fat": 0.5,
-        "saturatedFat": 0.03,
-        "protein": 3.0,
-        "fiber": 6.0,
-        "sodium": 0.04
+        "calories": 324.0,
+        "sugar": 28.0,
+        "fat": 17.0,
+        "saturatedFat": 9.0,
+        "protein": 6.0,
+        "fiber": 1.0,
+        "sodium": 0.4
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "carrot cake",
-      "healthScore": -6,
-      "nutrition": {
-        "calories": 327.0,
-        "sugar": 31.0,
-        "fat": 16.0,
-        "saturatedFat": 8.0,
-        "protein": 5.0,
-        "fiber": 2.0,
-        "sodium": 0.33
-      },
-      "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
+        "Diabetes mellitus",
+        "Obesity or active weight-loss treatment",
+        "Hypertriglyceridemia"
       ]
     },
     {
@@ -354,42 +354,7 @@
         "sodium": 0.02
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "cheese plate",
-      "healthScore": 3,
-      "nutrition": {
-        "calories": 197.0,
-        "sugar": 8.0,
-        "fat": 8.0,
-        "saturatedFat": 2.5,
-        "protein": 8.0,
-        "fiber": 5.0,
-        "sodium": 0.32
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
-      ]
-    },
-    {
-      "label": "cheesecake",
-      "healthScore": -5,
-      "nutrition": {
-        "calories": 345.0,
-        "sugar": 25.0,
-        "fat": 20.0,
-        "saturatedFat": 9.0,
-        "protein": 6.0,
-        "fiber": 2.0,
-        "sodium": 0.31
-      },
-      "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -405,197 +370,43 @@
         "sodium": 0.007
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
-      "label": "chestnut",
-      "healthScore": 0,
+      "label": "chilli",
+      "healthScore": 3,
       "nutrition": {
-        "calories": 208.0,
-        "sugar": 5.0,
-        "fat": 11.0,
-        "saturatedFat": 3.0,
-        "protein": 11.0,
-        "fiber": 4.0,
-        "sodium": 0.23
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
-      ]
-    },
-    {
-      "label": "chicken breast",
-      "healthScore": 5,
-      "nutrition": {
-        "calories": 208.0,
-        "sugar": 1.5,
-        "fat": 11.0,
-        "saturatedFat": 4.0,
-        "protein": 22.0,
-        "fiber": 0.5,
-        "sodium": 0.41000000000000003
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "chicken burger",
-      "healthScore": -6,
-      "nutrition": {
-        "calories": 324.0,
-        "sugar": 5.0,
-        "fat": 18.0,
-        "saturatedFat": 5.0,
-        "protein": 14.0,
-        "fiber": 2.0,
-        "sodium": 0.6900000000000001
-      },
-      "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
-      ]
-    },
-    {
-      "label": "chicken curry",
-      "healthScore": 4,
-      "nutrition": {
-        "calories": 202.0,
-        "sugar": 1.5,
-        "fat": 12.0,
-        "saturatedFat": 4.0,
-        "protein": 16.0,
-        "fiber": 1.5,
-        "sodium": 0.4
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "chicken shish kebab",
-      "healthScore": 5,
-      "nutrition": {
-        "calories": 153.0,
-        "sugar": 1.0,
-        "fat": 12.0,
-        "saturatedFat": 3.0,
-        "protein": 17.0,
-        "fiber": 0.5,
-        "sodium": 0.26
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "chicken wings",
-      "healthScore": 6,
-      "nutrition": {
-        "calories": 189.0,
-        "sugar": 1.0,
-        "fat": 6.0,
-        "saturatedFat": 3.0,
-        "protein": 23.0,
-        "fiber": 1.0,
-        "sodium": 0.27
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "chickpea dish",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 160.0,
-        "sugar": 0.5,
-        "fat": 12.0,
-        "saturatedFat": 2.0,
-        "protein": 14.0,
-        "fiber": 1.5,
-        "sodium": 0.22999999999999998
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "chilli pepper",
-      "healthScore": 10,
-      "nutrition": {
-        "calories": 38.0,
-        "sugar": 4.0,
-        "fat": 0.30000000000000004,
-        "saturatedFat": 0.09666666666666666,
-        "protein": 4.0,
-        "fiber": 4.0,
-        "sodium": 0.02
-      },
-      "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "chocolate cake",
-      "healthScore": -5,
-      "nutrition": {
-        "calories": 342.0,
-        "sugar": 30.0,
-        "fat": 17.0,
-        "saturatedFat": 9.0,
-        "protein": 6.0,
-        "fiber": 1.0,
-        "sodium": 0.28
-      },
-      "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
-      ]
-    },
-    {
-      "label": "chupra",
-      "healthScore": -1,
-      "nutrition": {
-        "calories": 133.0,
-        "sugar": 4.0,
-        "fat": 8.0,
-        "saturatedFat": 3.0,
-        "protein": 8.0,
-        "fiber": 5.0,
-        "sodium": 0.38
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
-      ]
-    },
-    {
-      "label": "club sandwich",
-      "healthScore": -3,
-      "nutrition": {
-        "calories": 303.0,
-        "sugar": 6.0,
-        "fat": 21.0,
-        "saturatedFat": 8.0,
-        "protein": 17.0,
+        "calories": 199.0,
+        "sugar": 8.0,
+        "fat": 10.0,
+        "saturatedFat": 3.5,
+        "protein": 10.0,
         "fiber": 3.0,
-        "sodium": 0.73
+        "sodium": 0.24000000000000002
       },
       "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
+      ]
+    },
+    {
+      "label": "club_sandwich",
+      "healthScore": -4,
+      "nutrition": {
+        "calories": 286.0,
+        "sugar": 9.0,
+        "fat": 20.0,
+        "saturatedFat": 7.0,
+        "protein": 16.0,
+        "fiber": 3.0,
+        "sodium": 0.66
+      },
+      "avoidFor": [
+        "Hypertension",
+        "Hypercholesterolemia or dyslipidemia",
+        "Sodium-restricted diets"
       ]
     },
     {
@@ -611,8 +422,8 @@
         "sodium": 0.006
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -628,24 +439,7 @@
         "sodium": 0.03
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "croissant",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 152.0,
-        "sugar": 7.0,
-        "fat": 11.0,
-        "saturatedFat": 2.5,
-        "protein": 11.0,
-        "fiber": 4.0,
-        "sodium": 0.27
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -661,25 +455,25 @@
         "sodium": 0.03
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
-      "label": "cup cakes",
+      "label": "cup_cakes",
       "healthScore": -7,
       "nutrition": {
-        "calories": 359.0,
-        "sugar": 31.0,
-        "fat": 18.0,
+        "calories": 342.0,
+        "sugar": 30.0,
+        "fat": 15.0,
         "saturatedFat": 7.0,
         "protein": 4.0,
-        "fiber": 2.0,
-        "sodium": 0.35
+        "fiber": 1.0,
+        "sodium": 0.38
       },
       "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
+        "Diabetes mellitus",
+        "Obesity or active weight-loss treatment",
+        "Hypertriglyceridemia"
       ]
     },
     {
@@ -695,8 +489,8 @@
         "sodium": 0.006
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -712,198 +506,113 @@
         "sodium": 0.35
       },
       "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
+        "Diabetes mellitus",
+        "Obesity or active weight-loss treatment",
+        "Hypertriglyceridemia"
       ]
     },
     {
-      "label": "dumplings",
+      "label": "egg",
+      "healthScore": 4,
+      "nutrition": {
+        "calories": 167.0,
+        "sugar": 2.0,
+        "fat": 12.0,
+        "saturatedFat": 5.0,
+        "protein": 21.0,
+        "fiber": 1.0,
+        "sodium": 0.25
+      },
+      "avoidFor": [
+        "Chronic kidney disease requiring protein restriction",
+        "Hyperuricemia or gout"
+      ]
+    },
+    {
+      "label": "fish",
+      "healthScore": -2,
+      "nutrition": {
+        "calories": 156.0,
+        "sugar": 3.0,
+        "fat": 7.0,
+        "saturatedFat": 2.0,
+        "protein": 7.0,
+        "fiber": 4.0,
+        "sodium": 0.21000000000000002
+      },
+      "avoidFor": [
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
+      ]
+    },
+    {
+      "label": "french_fries",
       "healthScore": 0,
       "nutrition": {
-        "calories": 139.0,
+        "calories": 192.0,
         "sugar": 5.0,
-        "fat": 8.0,
-        "saturatedFat": 2.7,
+        "fat": 11.0,
+        "saturatedFat": 2.5,
         "protein": 11.0,
-        "fiber": 5.0,
-        "sodium": 0.38999999999999996
-      },
-      "avoidFor": [
-        "People on low-sodium diets should check serving size"
-      ]
-    },
-    {
-      "label": "eggplant",
-      "healthScore": 9,
-      "nutrition": {
-        "calories": 25.0,
-        "sugar": 3.0,
-        "fat": 0.4,
-        "saturatedFat": 0.06333333333333332,
-        "protein": 3.5,
-        "fiber": 5.0,
-        "sodium": 0.03
-      },
-      "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "eggs with sausage",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 205.0,
-        "sugar": 2.0,
-        "fat": 8.0,
-        "saturatedFat": 5.0,
-        "protein": 19.0,
-        "fiber": 1.0,
-        "sodium": 0.18
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "falafel",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 155.0,
-        "sugar": 2.0,
-        "fat": 7.0,
-        "saturatedFat": 5.0,
-        "protein": 19.0,
-        "fiber": 1.0,
-        "sodium": 0.32999999999999996
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "fig",
-      "healthScore": 8,
-      "nutrition": {
-        "calories": 60.0,
-        "sugar": 12.0,
-        "fat": 0.4,
-        "saturatedFat": 0.1,
-        "protein": 0.5,
         "fiber": 4.0,
-        "sodium": 0.006
+        "sodium": 0.32
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
-      "label": "fish and chips",
+      "label": "french_toast",
+      "healthScore": 0,
+      "nutrition": {
+        "calories": 130.0,
+        "sugar": 5.0,
+        "fat": 5.0,
+        "saturatedFat": 1.5,
+        "protein": 5.0,
+        "fiber": 2.0,
+        "sodium": 0.25
+      },
+      "avoidFor": [
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
+      ]
+    },
+    {
+      "label": "fried_chicken",
+      "healthScore": -4,
+      "nutrition": {
+        "calories": 342.0,
+        "sugar": 9.0,
+        "fat": 20.0,
+        "saturatedFat": 7.0,
+        "protein": 16.0,
+        "fiber": 3.0,
+        "sodium": 0.77
+      },
+      "avoidFor": [
+        "Hypertension",
+        "Hypercholesterolemia or dyslipidemia",
+        "Sodium-restricted diets"
+      ]
+    },
+    {
+      "label": "fried_rice",
       "healthScore": -6,
       "nutrition": {
-        "calories": 332.0,
-        "sugar": 5.0,
+        "calories": 356.0,
+        "sugar": 9.0,
         "fat": 18.0,
         "saturatedFat": 5.0,
         "protein": 14.0,
-        "fiber": 2.0,
-        "sodium": 0.67
-      },
-      "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
-      ]
-    },
-    {
-      "label": "french fries",
-      "healthScore": -3,
-      "nutrition": {
-        "calories": 359.0,
-        "sugar": 10.0,
-        "fat": 21.0,
-        "saturatedFat": 8.0,
-        "protein": 17.0,
-        "fiber": 4.0,
-        "sodium": 0.74
-      },
-      "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
-      ]
-    },
-    {
-      "label": "french toast",
-      "healthScore": 3,
-      "nutrition": {
-        "calories": 147.0,
-        "sugar": 8.0,
-        "fat": 6.0,
-        "saturatedFat": 2.5,
-        "protein": 6.0,
         "fiber": 3.0,
-        "sodium": 0.37
+        "sodium": 0.86
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
-      ]
-    },
-    {
-      "label": "fried chicken",
-      "healthScore": -3,
-      "nutrition": {
-        "calories": 359.0,
-        "sugar": 6.0,
-        "fat": 21.0,
-        "saturatedFat": 8.0,
-        "protein": 17.0,
-        "fiber": 3.0,
-        "sodium": 0.8400000000000001
-      },
-      "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
-      ]
-    },
-    {
-      "label": "fried rice",
-      "healthScore": -5,
-      "nutrition": {
-        "calories": 293.0,
-        "sugar": 6.0,
-        "fat": 19.0,
-        "saturatedFat": 6.0,
-        "protein": 15.0,
-        "fiber": 3.0,
-        "sodium": 0.93
-      },
-      "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
-      ]
-    },
-    {
-      "label": "frozen yogurt",
-      "healthScore": -2,
-      "nutrition": {
-        "calories": 144.0,
-        "sugar": 3.0,
-        "fat": 11.0,
-        "saturatedFat": 3.5,
-        "protein": 11.0,
-        "fiber": 4.0,
-        "sodium": 0.44
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Hypertension",
+        "Hypercholesterolemia or dyslipidemia",
+        "Sodium-restricted diets"
       ]
     },
     {
@@ -919,23 +628,7 @@
         "sodium": 0.03
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "garlic bread",
-      "healthScore": 9,
-      "nutrition": {
-        "calories": 43.0,
-        "sugar": 3.0,
-        "fat": 0.2,
-        "saturatedFat": 0.06333333333333332,
-        "protein": 3.5,
-        "fiber": 3.0,
-        "sodium": 0.01
-      },
-      "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -951,24 +644,24 @@
         "sodium": 0.01
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
-      "label": "Golden Chicken",
-      "healthScore": 2,
+      "label": "gram",
+      "healthScore": 1,
       "nutrition": {
-        "calories": 200.0,
-        "sugar": 1.5,
-        "fat": 10.0,
-        "saturatedFat": 4.0,
-        "protein": 14.0,
-        "fiber": 1.0,
-        "sodium": 0.32999999999999996
+        "calories": 153.0,
+        "sugar": 6.0,
+        "fat": 12.0,
+        "saturatedFat": 3.0,
+        "protein": 12.0,
+        "fiber": 5.0,
+        "sodium": 0.43000000000000005
       },
       "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -984,77 +677,60 @@
         "sodium": 0.007
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
-      "label": "grapefruit",
-      "healthScore": 8,
+      "label": "grilled_cheese_sandwich",
+      "healthScore": -3,
       "nutrition": {
-        "calories": 51.0,
-        "sugar": 9.0,
-        "fat": 0.30000000000000004,
-        "saturatedFat": 0.1,
-        "protein": 1.0,
-        "fiber": 3.0,
-        "sodium": 0.006
+        "calories": 359.0,
+        "sugar": 10.0,
+        "fat": 21.0,
+        "saturatedFat": 8.0,
+        "protein": 17.0,
+        "fiber": 4.0,
+        "sodium": 0.8400000000000001
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hypertension",
+        "Hypercholesterolemia or dyslipidemia",
+        "Sodium-restricted diets"
       ]
     },
     {
-      "label": "green olive",
-      "healthScore": -2,
-      "nutrition": {
-        "calories": 194.0,
-        "sugar": 3.0,
-        "fat": 5.0,
-        "saturatedFat": 3.5,
-        "protein": 5.0,
-        "fiber": 2.0,
-        "sodium": 0.24000000000000002
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
-      ]
-    },
-    {
-      "label": "green runner beans",
+      "label": "guava",
       "healthScore": 2,
       "nutrition": {
-        "calories": 150.0,
+        "calories": 182.0,
         "sugar": 7.0,
         "fat": 9.0,
-        "saturatedFat": 1.5,
+        "saturatedFat": 2.5,
         "protein": 9.0,
         "fiber": 2.0,
-        "sodium": 0.25
+        "sodium": 0.27
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
-      "label": "grilled cheese sandwich",
-      "healthScore": -5,
+      "label": "gujia",
+      "healthScore": -2,
       "nutrition": {
-        "calories": 313.0,
-        "sugar": 10.0,
-        "fat": 15.0,
-        "saturatedFat": 6.0,
-        "protein": 11.0,
-        "fiber": 4.0,
-        "sodium": 0.98
+        "calories": 178.0,
+        "sugar": 3.0,
+        "fat": 5.0,
+        "saturatedFat": 3.0,
+        "protein": 5.0,
+        "fiber": 2.0,
+        "sodium": 0.23
       },
       "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -1070,111 +746,76 @@
         "sodium": 0.77
       },
       "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
+        "Hypertension",
+        "Hypercholesterolemia or dyslipidemia",
+        "Sodium-restricted diets"
       ]
     },
     {
-      "label": "hot and sour soup",
-      "healthScore": 1,
-      "nutrition": {
-        "calories": 166.0,
-        "sugar": 4.0,
-        "fat": 5.0,
-        "saturatedFat": 2.2,
-        "protein": 6.0,
-        "fiber": 4.0,
-        "sodium": 0.5599999999999999
-      },
-      "avoidFor": [
-        "People on low-sodium diets should check serving size"
-      ]
-    },
-    {
-      "label": "hot dog",
-      "healthScore": -5,
-      "nutrition": {
-        "calories": 317.0,
-        "sugar": 10.0,
-        "fat": 19.0,
-        "saturatedFat": 6.0,
-        "protein": 15.0,
-        "fiber": 4.0,
-        "sodium": 0.77
-      },
-      "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
-      ]
-    },
-    {
-      "label": "hummus",
-      "healthScore": 3,
-      "nutrition": {
-        "calories": 181.0,
-        "sugar": 2.0,
-        "fat": 12.0,
-        "saturatedFat": 5.0,
-        "protein": 15.0,
-        "fiber": 1.5,
-        "sodium": 0.39
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "ice cream",
-      "healthScore": -5,
-      "nutrition": {
-        "calories": 337.0,
-        "sugar": 25.0,
-        "fat": 20.0,
-        "saturatedFat": 9.0,
-        "protein": 6.0,
-        "fiber": 2.0,
-        "sodium": 0.43000000000000005
-      },
-      "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
-      ]
-    },
-    {
-      "label": "jalapeno",
+      "label": "hot_dog",
       "healthScore": 0,
       "nutrition": {
-        "calories": 172.0,
+        "calories": 150.0,
         "sugar": 5.0,
-        "fat": 7.0,
-        "saturatedFat": 2.5,
-        "protein": 7.0,
-        "fiber": 4.0,
-        "sodium": 0.37
+        "fat": 9.0,
+        "saturatedFat": 1.5,
+        "protein": 9.0,
+        "fiber": 2.0,
+        "sodium": 0.35
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
-      "label": "kidney bean dish",
-      "healthScore": 1,
+      "label": "ice_cream",
+      "healthScore": 0,
       "nutrition": {
-        "calories": 138.0,
-        "sugar": 4.0,
-        "fat": 7.0,
-        "saturatedFat": 2.2,
-        "protein": 10.0,
-        "fiber": 4.0,
-        "sodium": 0.48
+        "calories": 170.0,
+        "sugar": 5.0,
+        "fat": 5.0,
+        "saturatedFat": 1.5,
+        "protein": 5.0,
+        "fiber": 2.0,
+        "sodium": 0.4
       },
       "avoidFor": [
-        "People on low-sodium diets should check serving size"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
+      ]
+    },
+    {
+      "label": "kheer",
+      "healthScore": 3,
+      "nutrition": {
+        "calories": 177.0,
+        "sugar": 8.0,
+        "fat": 12.0,
+        "saturatedFat": 2.5,
+        "protein": 12.0,
+        "fiber": 5.0,
+        "sodium": 0.22
+      },
+      "avoidFor": [
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
+      ]
+    },
+    {
+      "label": "kidney_bean_dish",
+      "healthScore": 1,
+      "nutrition": {
+        "calories": 184.0,
+        "sugar": 2.0,
+        "fat": 8.0,
+        "saturatedFat": 1.2,
+        "protein": 10.0,
+        "fiber": 2.0,
+        "sodium": 0.49
+      },
+      "avoidFor": [
+        "Sodium-restricted diets"
       ]
     },
     {
@@ -1190,25 +831,8 @@
         "sodium": 0.006
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
-      ]
-    },
-    {
-      "label": "lamb chops",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 145.0,
-        "sugar": 1.0,
-        "fat": 11.0,
-        "saturatedFat": 3.0,
-        "protein": 19.0,
-        "fiber": 1.0,
-        "sodium": 0.28
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -1224,75 +848,25 @@
         "sodium": 0.007
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
-      "label": "lentil balls",
-      "healthScore": 3,
+      "label": "litchi",
+      "healthScore": -1,
       "nutrition": {
-        "calories": 156.0,
-        "sugar": 1.5,
-        "fat": 8.0,
-        "saturatedFat": 4.0,
-        "protein": 20.0,
-        "fiber": 0.5,
-        "sodium": 0.24
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "lentil dish",
-      "healthScore": 6,
-      "nutrition": {
-        "calories": 194.0,
-        "sugar": 0.5,
-        "fat": 11.0,
-        "saturatedFat": 2.0,
-        "protein": 18.0,
-        "fiber": 0.5,
-        "sodium": 0.22
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "lentil soup",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 155.0,
-        "sugar": 2.0,
-        "fat": 7.0,
-        "saturatedFat": 5.0,
-        "protein": 19.0,
-        "fiber": 1.0,
-        "sodium": 0.28
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "lettuce",
-      "healthScore": 10,
-      "nutrition": {
-        "calories": 33.0,
+        "calories": 207.0,
         "sugar": 4.0,
-        "fat": 0.4,
-        "saturatedFat": 0.09666666666666666,
-        "protein": 2.5,
-        "fiber": 5.0,
-        "sodium": 0.03
+        "fat": 10.0,
+        "saturatedFat": 2.5,
+        "protein": 10.0,
+        "fiber": 3.0,
+        "sodium": 0.32
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -1308,77 +882,42 @@
         "sodium": 0.007
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
-      "label": "mashed potatoes",
-      "healthScore": -1,
+      "label": "meat",
+      "healthScore": 1,
       "nutrition": {
-        "calories": 147.0,
-        "sugar": 4.0,
-        "fat": 6.0,
-        "saturatedFat": 2.5,
-        "protein": 6.0,
-        "fiber": 3.0,
-        "sodium": 0.32
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
-      ]
-    },
-    {
-      "label": "meatball",
-      "healthScore": 6,
-      "nutrition": {
-        "calories": 204.0,
-        "sugar": 1.5,
-        "fat": 7.0,
-        "saturatedFat": 4.0,
-        "protein": 18.0,
-        "fiber": 0.5,
-        "sodium": 0.27
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "melon",
-      "healthScore": 9,
-      "nutrition": {
-        "calories": 69.0,
-        "sugar": 13.0,
-        "fat": 0.5,
-        "saturatedFat": 0.15000000000000002,
-        "protein": 2.5,
+        "calories": 153.0,
+        "sugar": 6.0,
+        "fat": 12.0,
+        "saturatedFat": 3.0,
+        "protein": 12.0,
         "fiber": 5.0,
-        "sodium": 0.007
+        "sodium": 0.43000000000000005
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
-      "label": "muffin",
-      "healthScore": -7,
+      "label": "momo",
+      "healthScore": 0,
       "nutrition": {
-        "calories": 325.0,
-        "sugar": 29.0,
-        "fat": 18.0,
-        "saturatedFat": 7.0,
-        "protein": 4.0,
+        "calories": 170.0,
+        "sugar": 5.0,
+        "fat": 5.0,
+        "saturatedFat": 1.5,
+        "protein": 5.0,
         "fiber": 2.0,
-        "sodium": 0.41000000000000003
+        "sodium": 0.35
       },
       "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -1394,23 +933,7 @@
         "sodium": 0.03
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "okra stew",
-      "healthScore": 8,
-      "nutrition": {
-        "calories": 37.0,
-        "sugar": 2.0,
-        "fat": 0.2,
-        "saturatedFat": 0.03,
-        "protein": 1.5,
-        "fiber": 3.0,
-        "sodium": 0.01
-      },
-      "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -1426,8 +949,8 @@
         "sodium": 0.33
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -1443,23 +966,7 @@
         "sodium": 0.04
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "onion rings",
-      "healthScore": 9,
-      "nutrition": {
-        "calories": 26.0,
-        "sugar": 3.0,
-        "fat": 0.4,
-        "saturatedFat": 0.06333333333333332,
-        "protein": 3.5,
-        "fiber": 5.0,
-        "sodium": 0.03
-      },
-      "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -1475,8 +982,8 @@
         "sodium": 0.005
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -1492,9 +999,9 @@
         "sodium": 0.54
       },
       "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
+        "Diabetes mellitus",
+        "Obesity or active weight-loss treatment",
+        "Hypertriglyceridemia"
       ]
     },
     {
@@ -1510,8 +1017,8 @@
         "sodium": 0.005
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -1527,8 +1034,8 @@
         "sodium": 0.23
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -1544,8 +1051,8 @@
         "sodium": 0.006
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -1561,7 +1068,7 @@
         "sodium": 0.02
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -1577,7 +1084,7 @@
         "sodium": 0.01
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -1593,8 +1100,8 @@
         "sodium": 0.27
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -1610,8 +1117,8 @@
         "sodium": 0.006
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -1627,26 +1134,9 @@
         "sodium": 0.98
       },
       "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
-      ]
-    },
-    {
-      "label": "plum",
-      "healthScore": 9,
-      "nutrition": {
-        "calories": 56.0,
-        "sugar": 10.0,
-        "fat": 0.4,
-        "saturatedFat": 0.15000000000000002,
-        "protein": 1.0,
-        "fiber": 4.0,
-        "sodium": 0.007
-      },
-      "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hypertension",
+        "Hypercholesterolemia or dyslipidemia",
+        "Sodium-restricted diets"
       ]
     },
     {
@@ -1662,40 +1152,24 @@
         "sodium": 0.006
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
-      "label": "porridge",
-      "healthScore": 1,
+      "label": "potato_dish",
+      "healthScore": -1,
       "nutrition": {
-        "calories": 180.0,
-        "sugar": 2.0,
-        "fat": 4.0,
-        "saturatedFat": 1.2,
+        "calories": 182.0,
+        "sugar": 4.0,
+        "fat": 6.0,
+        "saturatedFat": 2.2,
         "protein": 11.0,
-        "fiber": 2.0,
-        "sodium": 0.44999999999999996
+        "fiber": 4.0,
+        "sodium": 0.42
       },
       "avoidFor": [
-        "People on low-sodium diets should check serving size"
-      ]
-    },
-    {
-      "label": "potato dish",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 199.0,
-        "sugar": 5.0,
-        "fat": 8.0,
-        "saturatedFat": 2.7,
-        "protein": 11.0,
-        "fiber": 5.0,
-        "sodium": 0.54
-      },
-      "avoidFor": [
-        "People on low-sodium diets should check serving size"
+        "Sodium-restricted diets"
       ]
     },
     {
@@ -1711,7 +1185,7 @@
         "sodium": 0.01
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -1727,42 +1201,7 @@
         "sodium": 0.04
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "raspberry",
-      "healthScore": 9,
-      "nutrition": {
-        "calories": 56.0,
-        "sugar": 10.0,
-        "fat": 0.4,
-        "saturatedFat": 0.15000000000000002,
-        "protein": 1.0,
-        "fiber": 4.0,
-        "sodium": 0.007
-      },
-      "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
-      ]
-    },
-    {
-      "label": "red velvet cake",
-      "healthScore": -5,
-      "nutrition": {
-        "calories": 325.0,
-        "sugar": 29.0,
-        "fat": 20.0,
-        "saturatedFat": 9.0,
-        "protein": 6.0,
-        "fiber": 2.0,
-        "sodium": 0.31
-      },
-      "avoidFor": [
-        "People with diabetes",
-        "People with obesity or weight-loss goals",
-        "People with high triglycerides"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -1778,24 +1217,7 @@
         "sodium": 0.54
       },
       "avoidFor": [
-        "People on low-sodium diets should check serving size"
-      ]
-    },
-    {
-      "label": "roast chicken",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 190.0,
-        "sugar": 1.5,
-        "fat": 7.0,
-        "saturatedFat": 4.0,
-        "protein": 14.0,
-        "fiber": 1.5,
-        "sodium": 0.28
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
+        "Sodium-restricted diets"
       ]
     },
     {
@@ -1811,7 +1233,7 @@
         "sodium": 0.54
       },
       "avoidFor": [
-        "People on low-sodium diets should check serving size"
+        "Sodium-restricted diets"
       ]
     },
     {
@@ -1827,77 +1249,26 @@
         "sodium": 0.74
       },
       "avoidFor": [
-        "People with hypertension",
-        "People with high cholesterol",
-        "People on low-sodium diets"
+        "Hypertension",
+        "Hypercholesterolemia or dyslipidemia",
+        "Sodium-restricted diets"
       ]
     },
     {
-      "label": "sausage",
-      "healthScore": 2,
-      "nutrition": {
-        "calories": 185.0,
-        "sugar": 1.0,
-        "fat": 9.0,
-        "saturatedFat": 3.0,
-        "protein": 19.0,
-        "fiber": 1.0,
-        "sodium": 0.38
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "sauteed meat",
+      "label": "selroti",
       "healthScore": 0,
       "nutrition": {
-        "calories": 132.0,
+        "calories": 180.0,
         "sugar": 5.0,
         "fat": 7.0,
-        "saturatedFat": 2.5,
+        "saturatedFat": 1.5,
         "protein": 7.0,
         "fiber": 4.0,
-        "sodium": 0.22
+        "sodium": 0.4
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
-      ]
-    },
-    {
-      "label": "sautéed chicken",
-      "healthScore": 3,
-      "nutrition": {
-        "calories": 166.0,
-        "sugar": 0.5,
-        "fat": 11.0,
-        "saturatedFat": 2.0,
-        "protein": 20.0,
-        "fiber": 1.0,
-        "sodium": 0.29
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "Smoothie Bowl",
-      "healthScore": 0,
-      "nutrition": {
-        "calories": 190.0,
-        "sugar": 5.0,
-        "fat": 9.0,
-        "saturatedFat": 1.5,
-        "protein": 9.0,
-        "fiber": 2.0,
-        "sodium": 0.35
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -1913,40 +1284,7 @@
         "sodium": 0.03
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "spring rolls",
-      "healthScore": 4,
-      "nutrition": {
-        "calories": 167.0,
-        "sugar": 5.0,
-        "fat": 6.0,
-        "saturatedFat": 2.7,
-        "protein": 6.0,
-        "fiber": 5.0,
-        "sodium": 0.57
-      },
-      "avoidFor": [
-        "People on low-sodium diets should check serving size"
-      ]
-    },
-    {
-      "label": "steak",
-      "healthScore": 3,
-      "nutrition": {
-        "calories": 186.0,
-        "sugar": 0.5,
-        "fat": 10.0,
-        "saturatedFat": 2.0,
-        "protein": 20.0,
-        "fiber": 1.5,
-        "sodium": 0.29
-      },
-      "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -1962,74 +1300,25 @@
         "sodium": 0.007
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
-      "label": "stuffed peppers",
-      "healthScore": 9,
+      "label": "sweet_potato",
+      "healthScore": 0,
       "nutrition": {
-        "calories": 27.0,
-        "sugar": 3.0,
-        "fat": 0.2,
-        "saturatedFat": 0.06333333333333332,
-        "protein": 3.5,
-        "fiber": 3.0,
-        "sodium": 0.01
-      },
-      "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "sunny side up eggs",
-      "healthScore": 3,
-      "nutrition": {
-        "calories": 201.0,
-        "sugar": 1.0,
+        "calories": 160.0,
+        "sugar": 5.0,
         "fat": 11.0,
-        "saturatedFat": 3.0,
-        "protein": 15.0,
-        "fiber": 1.0,
-        "sodium": 0.33999999999999997
+        "saturatedFat": 1.5,
+        "protein": 11.0,
+        "fiber": 4.0,
+        "sodium": 0.30000000000000004
       },
       "avoidFor": [
-        "People with kidney disease should moderate protein intake",
-        "People with high uric acid (for red meats)"
-      ]
-    },
-    {
-      "label": "sweet potato",
-      "healthScore": 10,
-      "nutrition": {
-        "calories": 47.0,
-        "sugar": 4.0,
-        "fat": 0.5,
-        "saturatedFat": 0.09666666666666666,
-        "protein": 4.0,
-        "fiber": 6.0,
-        "sodium": 0.04
-      },
-      "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "tangerine",
-      "healthScore": 7,
-      "nutrition": {
-        "calories": 67.0,
-        "sugar": 11.0,
-        "fat": 0.30000000000000004,
-        "saturatedFat": 0.05,
-        "protein": 1.5,
-        "fiber": 3.0,
-        "sodium": 0.005
-      },
-      "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -2045,25 +1334,8 @@
         "sodium": 0.34
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
-      ]
-    },
-    {
-      "label": "toast",
-      "healthScore": 1,
-      "nutrition": {
-        "calories": 205.0,
-        "sugar": 6.0,
-        "fat": 8.0,
-        "saturatedFat": 1.5,
-        "protein": 8.0,
-        "fiber": 5.0,
-        "sodium": 0.25
-      },
-      "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     },
     {
@@ -2079,23 +1351,7 @@
         "sodium": 0.01
       },
       "avoidFor": [
-        "People with specific vegetable allergies"
-      ]
-    },
-    {
-      "label": "tomato soup",
-      "healthScore": 9,
-      "nutrition": {
-        "calories": 47.0,
-        "sugar": 3.0,
-        "fat": 0.5,
-        "saturatedFat": 0.06333333333333332,
-        "protein": 2.0,
-        "fiber": 6.0,
-        "sodium": 0.04
-      },
-      "avoidFor": [
-        "People with specific vegetable allergies"
+        "Documented allergy to this vegetable"
       ]
     },
     {
@@ -2111,8 +1367,8 @@
         "sodium": 0.005
       },
       "avoidFor": [
-        "People with fructose intolerance",
-        "People with diabetes should monitor portions"
+        "Hereditary fructose intolerance",
+        "Diabetes mellitus if carbohydrate portions are not controlled"
       ]
     },
     {
@@ -2128,8 +1384,8 @@
         "sodium": 0.27
       },
       "avoidFor": [
-        "People with specific food allergies",
-        "People with strict medical diets should consult a professional"
+        "Confirmed allergy to this food",
+        "Condition-specific therapeutic diets"
       ]
     }
   ]

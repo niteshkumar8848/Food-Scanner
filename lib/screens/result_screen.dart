@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../models/food_scan_result.dart';
 import '../services/nutrition_service.dart';
+import '../utils/health_score_calculator.dart';
 import '../widgets/health_score_meter.dart';
 import '../widgets/nutrition_card.dart';
 import '../widgets/result_summary.dart';
@@ -38,6 +39,7 @@ class _ResultScreenState extends State<ResultScreen> {
 
     try {
       final profile = await _nutritionService.fetchProfile(candidate.label);
+      final warnings = HealthScoreCalculator.evaluate(profile.nutrition).warnings;
       setState(() {
         _current = _current.copyWith(
           foodName: profile.label,
@@ -45,6 +47,8 @@ class _ResultScreenState extends State<ResultScreen> {
           nutrition: profile.nutrition,
           healthScore: profile.healthScore,
           avoidFor: profile.avoidFor,
+          recommendedIntake: HealthScoreCalculator.recommendation(profile.healthScore),
+          riskWarnings: warnings,
         );
       });
     } catch (_) {

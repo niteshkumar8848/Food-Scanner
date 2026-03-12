@@ -105,9 +105,9 @@ _Profile _buildProfile(String label) {
       healthScore: -7 + (seed % 3),
       nutrition: n,
       avoidFor: const [
-        'People with diabetes',
-        'People with obesity or weight-loss goals',
-        'People with high triglycerides',
+        'Diabetes mellitus',
+        'Obesity or active weight-loss treatment',
+        'Hypertriglyceridemia',
       ],
     );
   }
@@ -126,9 +126,9 @@ _Profile _buildProfile(String label) {
       healthScore: -6 + (seed % 4),
       nutrition: n,
       avoidFor: const [
-        'People with hypertension',
-        'People with high cholesterol',
-        'People on low-sodium diets',
+        'Hypertension',
+        'Hypercholesterolemia or dyslipidemia',
+        'Sodium-restricted diets',
       ],
     );
   }
@@ -147,8 +147,8 @@ _Profile _buildProfile(String label) {
       healthScore: 7 + (seed % 3),
       nutrition: n,
       avoidFor: const [
-        'People with fructose intolerance',
-        'People with diabetes should monitor portions',
+        'Hereditary fructose intolerance',
+        'Diabetes mellitus if carbohydrate portions are not controlled',
       ],
     );
   }
@@ -167,7 +167,7 @@ _Profile _buildProfile(String label) {
       healthScore: 8 + (seed % 3),
       nutrition: n,
       avoidFor: const [
-        'People with specific vegetable allergies',
+        'Documented allergy to this vegetable',
       ],
     );
   }
@@ -186,8 +186,8 @@ _Profile _buildProfile(String label) {
       healthScore: 2 + (seed % 5),
       nutrition: n,
       avoidFor: const [
-        'People with kidney disease should moderate protein intake',
-        'People with high uric acid (for red meats)',
+        'Chronic kidney disease requiring protein restriction',
+        'Hyperuricemia or gout',
       ],
     );
   }
@@ -206,7 +206,7 @@ _Profile _buildProfile(String label) {
       healthScore: -1 + (seed % 6),
       nutrition: n,
       avoidFor: const [
-        'People on low-sodium diets should check serving size',
+        'Sodium-restricted diets',
       ],
     );
   }
@@ -224,8 +224,8 @@ _Profile _buildProfile(String label) {
     healthScore: -2 + (seed % 6),
     nutrition: n,
     avoidFor: const [
-      'People with specific food allergies',
-      'People with strict medical diets should consult a professional',
+      'Confirmed allergy to this food',
+      'Condition-specific therapeutic diets',
     ],
   );
 }

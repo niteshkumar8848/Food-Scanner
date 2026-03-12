@@ -16,10 +16,9 @@ class NutritionService {
       return db[key]!;
     }
 
-    // Fuzzy fallback for predictions like "chicken burger" vs "hamburger".
-    final found = db.entries.where((e) => key.contains(e.key) || e.key.contains(key)).toList();
-    if (found.isNotEmpty) {
-      return found.first.value;
+    final fallback = _findBestFallback(db, key);
+    if (fallback != null) {
+      return fallback;
     }
 
     // Safe default profile.
@@ -36,7 +35,7 @@ class NutritionService {
         sodium: 0.2,
       ),
       avoidFor: [
-        'People with specific food allergies',
+        'Confirmed allergy to this food',
       ],
     );
   }
@@ -64,6 +63,38 @@ class NutritionService {
   }
 
   String _normalize(String value) {
-    return value.toLowerCase().trim();
+    return value
+        .toLowerCase()
+        .trim()
+        .replaceAll(RegExp(r'[_\-\s]+'), ' ')
+        .replaceAll(RegExp(r'[^a-z0-9 ]+'), '')
+        .replaceAll(RegExp(r'\s+'), ' ');
+  }
+
+  FoodProfile? _findBestFallback(Map<String, FoodProfile> db, String key) {
+    final inputTokens = key.split(' ').where((token) => token.isNotEmpty).toSet();
+    FoodProfile? bestProfile;
+    int bestScore = 0;
+
+    for (final entry in db.entries) {
+      final candidateKey = entry.key;
+      if (candidateKey.contains(key) || key.contains(candidateKey)) {
+        final score = candidateKey.length;
+        if (score > bestScore) {
+          bestScore = score;
+          bestProfile = entry.value;
+        }
+        continue;
+      }
+
+      final candidateTokens = candidateKey.split(' ').where((token) => token.isNotEmpty).toSet();
+      final overlap = inputTokens.intersection(candidateTokens).length;
+      if (overlap >= 2 && overlap > bestScore) {
+        bestScore = overlap;
+        bestProfile = entry.value;
+      }
+    }
+
+    return bestProfile;
   }
 }

@@ -1,89 +1,60 @@
+Carrot
+Chicken
+Smoothie_Bowl
+almond
 apple
-apricot
-avocado
+avocado 
 banana
-Beef noodle soup
-beet
-bell pepper
-black olive
+bell_pepper
+bhendi_sabji
+black_olive
 blackberry
 blueberry
-boil egg
-boiled chicken
+boil_egg
+boiled_chicken
 bread
-bread pudding
-broccoli
-brownie
-brussels sprouts
+brinjal
+broccoli 
+burger
 cabbage
-Carrot
-carrot cake
-cauliflower
-cheese plate
-cheesecake
+cake
+cauliflower 
 cherry
-chestnut
-chicken breast
-chicken burger
-chicken curry
-chicken shish kebab
-chicken wings
-chickpea dish
-chilli pepper
-chocolate cake
-chupra
-club sandwich
+chilli
+club_sandwich
 coconut
 corn
-croissant
-cucumber
-cup cakes
+cucumber 
+cup_cakes
 dates
 donuts
-dumplings
-eggplant
-eggs with sausage
-falafel
-fig
-fish and chips
-french fries
-french toast
-fried chicken
-fried rice
-frozen yogurt
+egg
+fish
+french_fries
+french_toast
+fried_chicken
+fried_rice
 garlic
-garlic bread
 ginger
-Golden Chicken
+gram
 grape
-grapefruit
-green olive
-green runner beans
-grilled cheese sandwich
+grilled_cheese_sandwich
+guava
+gujia
 hamburger
-hot and sour soup
-hot dog
-hummus
-ice cream
-jalapeno
-kidney bean dish
+hot_dog
+ice_cream
+kheer
+kidney_bean_dish
 kiwi
-lamb chops
 lemon
-lentil balls
-lentil dish
-lentil soup
-lettuce
+litchi
 mango
-mashed potatoes
-meatball
-melon
-muffin
+meat
+momo
 mushroom
-okra stew
 omelette
 onion
-onion rings
 orange
 pancakes
 peach
@@ -94,33 +65,18 @@ pepper
 pickle
 pineapple
 pizza
-plum
 pomegranate
-porridge
-potato dish
+potato_dish
 pumpkin
 radish
-raspberry
-red velvet cake
 rice
-roast chicken
 samosa
 sandwich
-sausage
-sauteed meat
-sautéed chicken
-Smoothie Bowl
+selroti
 spinach
-spring rolls
-steak
 strawberry
-stuffed peppers
-sunny side up eggs
-sweet potato
-tangerine
+sweet_potato
 tea
-toast
 tomato
-tomato soup
 watermelon
 yogurt
